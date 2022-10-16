@@ -1,7 +1,13 @@
-import React from 'react';
+import Quill from 'quill';
+import "quill/dist/quill.snow.css";
+import React, { useEffect } from 'react';
 
 export default function TextEditor() {
-  return (
-    <div>TextEditor</div>
+  useEffect(() => {
+    new Quill("#container", { theme: "snow" });
+  }, []);
+  
+    return (
+    <div id="container"></div>
   )
 }

@@ -2,7 +2,7 @@ import TextEditor from "./TextEditor";
 
 function App() {
   return (
-    <TextEditor>Opa.</TextEditor>
+    <TextEditor></TextEditor>
   );
 }
 
